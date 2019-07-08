@@ -18,7 +18,7 @@
                 <td>{{ item.name }}</td>
                 <td>{{ item.gender }}</td>
                 <td>
-                  <a href="edit.html">添加</a>
+                  <router-link :to=" '/heroes/change/' + item.id ">编辑</router-link>
                   &nbsp;&nbsp;
                   <a href="javascript:;" @click="del(item.id)">删除</a>
                 </td>
